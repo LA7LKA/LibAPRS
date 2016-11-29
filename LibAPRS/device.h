@@ -5,11 +5,11 @@
 
 // CPU settings
 #ifndef TARGET_CPU
-    #define TARGET_CPU m328p
+    #define TARGET_CPU m1284p
 #endif
 
 #ifndef F_CPU
-    #define F_CPU 16000000
+    #define F_CPU 8000000
 #endif
 
 #ifndef FREQUENCY_CORRECTION
@@ -20,7 +20,7 @@
 #define CONFIG_AFSK_DAC_SAMPLERATE 9600
 
 // Port settings
-#if TARGET_CPU == m328p
+#if TARGET_CPU == m1284p
     #define DAC_PORT PORTD
     #define DAC_DDR  DDRD
     #define LED_PORT PORTB
